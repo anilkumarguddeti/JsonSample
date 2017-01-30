@@ -41,6 +41,8 @@
     NSURL * url = [NSURL URLWithString:@"https://itunes.apple.com/in/rss/topfreeapplications/limit=25/json"];
    // NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
+    NSLog(@"%@",url);
+    
     NSLog(@"Task Num : 3");
     NSURLSessionDataTask * dataTask = [defaultSession dataTaskWithURL:url
                                                     completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
