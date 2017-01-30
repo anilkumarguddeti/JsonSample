@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSURLSessionDataDelegate,NSURLSessionDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableTask;
+
+
 
 
 @end
